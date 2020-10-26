@@ -1,0 +1,12 @@
+name = "coloapiworker"
+type = "javascript"
+account_id = "04e8ec7979d1d07c39925ab7332a116e"
+workers_dev = true
+
+[env.prod]
+workers_dev = false
+routes = ["*natdavidson.com/coloapiworker", "foo.natdavidson.com/*"]
+zone_id = "781c08837c4a2a074def2d8589b01148"
+
+[env.staging]
+url = "https://api.staging.cloudflare.com/client/v4/accounts/{}/workers/scripts/{}"
